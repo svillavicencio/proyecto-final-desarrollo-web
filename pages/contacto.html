@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio Villavicencio DJ</title>
+    <title>Contacto</title>
 </head>
 <body>
 
-    <!-- Encabezado de la pagina con los links para la navegacion de las secciones-->
     <header>
-
-        <a href="./index.html">
+        <a href="../index.html">
             <img src="" alt="Logo">
         </a>
         
         <!--Menu de navegacion-->
         <nav>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/fotos.html">Fotos</a></li>
-                <li><a href="./pages/shows.html">Shows</a></li>
-                <li><a href="./pages/influencias.html">Influencias</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./shows.html">Shows</a></li>
+                <li><a href="./influencias.html">Influencias</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <!--Concepto minimalista del contenido principal de la pagina-->
+    <h1>Contacto</h1>
+
+
     <main>
+
+
+        <!--Formulario de contacto-->
         <section>
-            <h2>Sergio Villavicencio</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> sapiente ea fugit deleniti, fugiat quaerat totam maiores quae ducimus voluptatum <br> beatae ullam assumenda sequi adipisci officia quas aut inventore! Alias.</p>
-            <img src="" alt="Foto del dj">
+
+            <form action="">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+
+
+
         </section>
     </main>
 
