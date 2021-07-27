@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: #E5E5E5;
+}
+
+header {
+    background-color: #14213D;
+
+}
+
+footer {
+    background: #FCA311;
+}
+
+table.showsTable {
+    background-color: #14213D;
+    text-align: center;
+}
+
+table.showsTable td, table.showsTable th {
+    border: 1px solid white;
+    padding: 3px 2px;
+}
+
+table.showsTable thead {
+    background: #FCA311;
+}
