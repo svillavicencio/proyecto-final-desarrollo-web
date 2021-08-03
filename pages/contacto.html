@@ -1,75 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
     <title>Contacto</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <a href="../index.html">
-            <img src="" alt="Logo">
-        </a>
-        
-        <!--Menu de navegacion-->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./fotos.html">Fotos</a></li>
-                <li><a href="./shows.html">Shows</a></li>
-                <li><a href="./influencias.html">Influencias</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+      <a href="../index.html">
+        <img src="" alt="Logo" />
+      </a>
+
+      <!--Menu de navegacion-->
+      <nav class="navBar">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./fotos.html">Fotos</a></li>
+          <li><a href="./shows.html">Shows</a></li>
+          <li><a href="./influencias.html">Influencias</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <h1>Contacto</h1>
 
-
     <main>
+      <!--Formulario de contacto-->
+      <section>
+        <form action="" class="contactForm">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" />
 
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
 
-        <!--Formulario de contacto-->
-        <section>
+          <label for="gender">Sexo</label>
+          <select name="gender" id="gender">
+            <option value="m">Masculino</option>
+            <option value="f">Femenino</option>
+          </select>
+          
+          <label for="newsletter"
+            >Deseo recibir noticias de proximos eventos</label
+          >
+          <input type="checkbox" name="newsletter" id="newsletter" value="1" />
 
-            <form action="">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name">
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Escribe tu mensaje..."
+          ></textarea>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-
-                <label for="gender">Sexo</label>
-                <select name="gender" id="gender">
-                    <option value="m">Masculino</option>
-                    <option value="f">Femenino</option>
-                </select>
-                <br>
-                <label for="newsletter">Deseo recibir noticias de proximos eventos</label>
-                <input type="checkbox" name="newsletter" id="newsletter" value="1">
-
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Restablecer">
-            </form>
-
-
-
-        </section>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Restablecer" />
+        </form>
+      </section>
     </main>
 
     <!--Pie de pagina con la idea de compartir redes sociales del artista-->
-    <footer>
-        <p>Sergio Villavicencio</p>
-        <ul>
-            <li><a href="https://soundcloud.com/sergiovillavicencio" target="_blank"><img src="" alt="SoundCloud"></a></li>
-            <li><a href="https://www.instagram.com/djsergiov/" target="_blank"><img src="" alt="Instagram"></a></li>
-            <li><a href="#"><img src="" alt="Youtube"></a></li>
-        </ul>
+    <footer class="footer">
+      <p>Sergio Villavicencio</p>
+      <ul>
+        <li>
+          <a href="https://soundcloud.com/sergiovillavicencio" target="_blank"
+            ><img src="" alt="SoundCloud"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/djsergiov/" target="_blank"
+            ><img src="" alt="Instagram"
+          /></a>
+        </li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
