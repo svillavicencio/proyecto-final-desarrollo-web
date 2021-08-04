@@ -1,77 +1,186 @@
-
-
+html {
+  font-family: "Georama", sans-serif;
+  font-size: 62.5%;
+}
 
 body {
-    font-size: 62.5%;
-    background-image: linear-gradient(to bottom, rgba(20,33,61,0.5), rgba(0,0,0,0.9)),url(../assets/photo0.jpeg);
-    background-size: cover;
-    font-family:'Georama', sans-serif;
-    background-color: black;
-    color: #E5E5E5;
-    margin: 0px;
-    height: 100vh;
-    font-size: 1rem;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 33, 61, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../assets/photo0.jpeg);
+  background-size: cover;
+  background-color: black;
+  color: #e5e5e5;
+  margin: 0;
 
-.navBar{
-    display: inline-block;
-}
-
-.navBar ul{
-    list-style-type: none;
-}
-
-.navBar li{
-    
-    display: inline-block;
-}
-
-.navBar ul li a{
-    margin-left: 2rem;
-    text-decoration: none;
-}
-
-.biografia{
-    display: inline-block;
+  height: 100vh;
+  font-size: 1.4rem;
 }
 
 header {
-    background-color: #14213D;
+  padding: 0rem 2rem;
+}
 
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navBar ul {
+  list-style-type: none;
+}
+
+.navBar li {
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+
+.navBar li:hover {
+  border-radius: 0.6rem;
+  background-color: #fca311;
+}
+
+.navBar ul li a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.navBar ul li a:hover {
+  background-color: #fca311;
+}
+.biografia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.biografia img {
+  width: 55vh;
+}
+
+header {
+  background-color: #14213d;
 }
 
 .footer {
-    text-align: center;
-    background: #FCA311;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background: #fca311;
+  color: black;
+}
+
+.footer ul li a img {
+  margin: 0.1rem 0.1rem;
+  width: 5vh;
+  height: 5vh;
+}
+
+.photosList div img {
+  width: 40vh;
 }
 
 table.showsTable {
-    background-color: #14213D;
-    text-align: center;
+  background-color: #14213d;
+  text-align: center;
 }
 
-table.showsTable td, table.showsTable th {
-    border: 1px solid white;
-    padding: 3px 2px;
+table.showsTable td,
+table.showsTable th {
+  border: 1px solid white;
+  padding: 3px 2px;
 }
 
 table.showsTable thead {
-    background: #FCA311;
+  background: #fca311;
 }
 
-.contactForm input{
-    display: block;
+.shows {
+  padding: 0rem 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
 }
 
-
-.footer ul li{
-    display: inline-block;
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.contactForm {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #14213d;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-.footer ul li a{
-    text-decoration: none;
+.photosList {
+  display: flex;
+  flex-direction: row;
+}
+.contactForm div {
+  margin-bottom: 2rem;
+}
+.contactForm .checkboxForm {
+  margin-top: 1rem;
+}
+.contactForm form {
+  display: flex;
+  flex-direction: column;
 }
 
-.footer p {
-    margin: 0px 0px;
+.footer ul li {
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer ul li:hover {
+  border-radius: 0.5rem;
+  background-color: #e5e5e5;
+}
+
+.influencias {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.djsCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.djsCards div {
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #14213d;
+  width: 30vh;
+  margin: 2rem 5rem;
+}
+
+.djsCards div img {
+  width: 30vh;
+  height: 20vh;
 }

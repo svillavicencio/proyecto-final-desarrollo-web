@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama&display=swap"
+      rel="stylesheet"
+    />
     <title>Contacto</title>
   </head>
   <body>
     <header>
-      <a href="../index.html">
-        <img src="" alt="Logo" />
-      </a>
-
       <!--Menu de navegacion-->
       <nav class="navBar">
+        <a href="../index.html">
+          <img src="" alt="Logo" />
+        </a>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="./fotos.html">Fotos</a></li>
@@ -28,28 +30,24 @@
       </nav>
     </header>
 
-    <h1>Contacto</h1>
-
-    <main>
+    <main class="contactSection">
+      <h1>Contacto</h1>
       <!--Formulario de contacto-->
-      <section>
-        <form action="" class="contactForm">
-          <label for="name">Nombre</label>
-          <input type="text" name="name" id="name" />
+      <section class="contactForm">
+        <form action="">
+          <div>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
 
-          <label for="gender">Sexo</label>
-          <select name="gender" id="gender">
-            <option value="m">Masculino</option>
-            <option value="f">Femenino</option>
-          </select>
-          
-          <label for="newsletter"
-            >Deseo recibir noticias de proximos eventos</label
-          >
-          <input type="checkbox" name="newsletter" id="newsletter" value="1" />
+            <label for="gender">Sexo</label>
+            <select name="gender" id="gender">
+              <option value="m">Masculino</option>
+              <option value="f">Femenino</option>
+            </select>
+          </div>
 
           <textarea
             name="message"
@@ -59,24 +57,37 @@
             placeholder="Escribe tu mensaje..."
           ></textarea>
 
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Restablecer" />
+          <div class="checkboxForm">
+            <label for="newsletter"
+              >Deseo recibir noticias de proximos eventos</label
+            >
+            <input
+              type="checkbox"
+              name="newsletter"
+              id="newsletter"
+              value="1"
+            />
+          </div>
+          <div>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Restablecer" />
+          </div>
         </form>
       </section>
     </main>
 
     <!--Pie de pagina con la idea de compartir redes sociales del artista-->
     <footer class="footer">
-      <p>Sergio Villavicencio</p>
+      <p>Sergio Villavicencio ©</p>
       <ul>
         <li>
           <a href="https://soundcloud.com/sergiovillavicencio" target="_blank"
-            ><img src="" alt="SoundCloud"
+            ><img src="../assets/soundcloud-icon.svg" alt="SoundCloud"
           /></a>
         </li>
         <li>
           <a href="https://www.instagram.com/djsergiov/" target="_blank"
-            ><img src="" alt="Instagram"
+            ><img src="../assets/instagram-seeklogo.com.svg" alt="Instagram"
           /></a>
         </li>
       </ul>
