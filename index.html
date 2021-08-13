@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,55 +14,60 @@
     <title>Sergio Villavicencio DJ</title>
   </head>
   <body>
-    <!-- Encabezado de la pagina con los links para la navegacion de las secciones-->
-    <header>
-      <!--Menu de navegacion-->
-      <nav class="navBar">
-        <a href="./index.html">
-          <img src="" alt="Logo" />
-        </a>
+    <div class="wrapper">
+
+      <!-- Encabezado de la pagina con los links para la navegacion de las secciones-->
+      <header class="header">
+        <!--Menu de navegacion-->
+        <nav class="navBar">
+          <a href="./index.html">
+            <img src="" alt="Logo" />
+          </a>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/fotos.html">Fotos</a></li>
+            <li><a href="./pages/shows.html">Shows</a></li>
+            <li><a href="./pages/influencias.html">Influencias</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <!--Concepto minimalista del contenido principal de la pagina-->
+      <main class="main">
+        <section class="biografia">
+          <div class="bio">
+            <h2>Sergio Villavicencio</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
+              sapiente ea fugit deleniti, fugiat quaerat totam maiores quae
+              ducimus voluptatum <br />
+              beatae ullam assumenda sequi adipisci officia quas aut inventore!
+              Alias.
+            </p>
+          </div>
+          <div class="mainPhoto">
+            <img src="./assets/photo0.jpeg" alt="Foto del dj"  />
+          </div>
+        </section>
+      </main>
+  
+      <!--Pie de pagina con la idea de compartir redes sociales del artista-->
+      <footer class="footer">
+        <p>Sergio Villavicencio ©</p>
         <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/fotos.html">Fotos</a></li>
-          <li><a href="./pages/shows.html">Shows</a></li>
-          <li><a href="./pages/influencias.html">Influencias</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li>
+            <a href="https://soundcloud.com/sergiovillavicencio" target="_blank"
+              ><img src="./assets/soundcloud-icon.svg" alt="SoundCloud"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/djsergiov/" target="_blank"
+              ><img src="./assets/instagram-seeklogo.com.svg" alt="Instagram"
+            /></a>
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <!--Concepto minimalista del contenido principal de la pagina-->
-    <main>
-      <section class="biografia">
-        <div>
-          <h2>Sergio Villavicencio</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
-            sapiente ea fugit deleniti, fugiat quaerat totam maiores quae
-            ducimus voluptatum <br />
-            beatae ullam assumenda sequi adipisci officia quas aut inventore!
-            Alias.
-          </p>
-        </div>
-        <img src="./assets/photo0.jpeg" alt="Foto del dj" />
-      </section>
-    </main>
-
-    <!--Pie de pagina con la idea de compartir redes sociales del artista-->
-    <footer class="footer">
-      <p>Sergio Villavicencio ©</p>
-      <ul>
-        <li>
-          <a href="https://soundcloud.com/sergiovillavicencio" target="_blank"
-            ><img src="./assets/soundcloud-icon.svg" alt="SoundCloud"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/djsergiov/" target="_blank"
-            ><img src="./assets/instagram-seeklogo.com.svg" alt="Instagram"
-          /></a>
-        </li>
-      </ul>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
