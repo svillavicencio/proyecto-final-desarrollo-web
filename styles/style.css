@@ -26,6 +26,11 @@ header {
   padding: 0rem 2rem;
 }
 
+.logo{
+  margin-top: 0.4rem;
+  width: 8vh;    
+}
+
 .navBar {
   display: flex;
   flex-direction: row;
@@ -43,7 +48,6 @@ header {
 
 .navBar li:hover {
   border-radius: 0.6rem;
-  background-color: #fca311;
 }
 
 .navBar ul li a {
@@ -52,8 +56,14 @@ header {
 }
 
 .navBar ul li a:hover {
+  color: black;
+}
+
+.navBar ul li:hover {
+  transition: 0.4s;
   background-color: #fca311;
 }
+
 .biografia {
   display: flex;
   flex-direction: row;
@@ -76,7 +86,12 @@ header {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  background: #fca311;
+  background: linear-gradient(
+      to bottom,
+      rgba(20, 33, 61, 0.1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    #fca311;
   color: black;
 }
 
@@ -176,6 +191,17 @@ table.showsTable thead {
   border-radius: 1rem;
   padding: 1rem;
   background-color: #14213d;
+  width: 30vh;
+  margin: 2rem 5rem;
+}
+.djsCards div:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #fca311;
   width: 30vh;
   margin: 2rem 5rem;
 }
