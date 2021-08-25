@@ -1,5 +1,6 @@
 html {
     font-family: "Georama", sans-serif;
+    height: 100%;
 }
 
 body{
@@ -9,10 +10,14 @@ body{
       rgba(0, 0, 0, 0.9)
     ),
     url(../assets/photo0.jpeg);
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
   background-color: black;
   color: #e5e5e5;
   margin: 0;
+  height: 100%;
+  padding: 0;
 }
 .nav-link{
   color: white;
