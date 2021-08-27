@@ -1,0 +1,122 @@
+html {
+  font-family: "Georama", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, rgba(20, 33, 61, 0.5), rgba(0, 0, 0, 0.9)), url(./assets/photo0.jpeg);
+  background-size: cover;
+  background-color: black;
+  color: #e5e5e5;
+  margin: 0;
+  height: 100vh;
+  font-size: 1.4rem;
+}
+
+.header {
+  padding: 0rem 2rem;
+  background-color: #14213d;
+}
+.header .header__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .header__navbar .navbar__logo {
+  margin-top: 0.4rem;
+  width: 8vh;
+}
+.header .header__navbar ul {
+  list-style-type: none;
+}
+.header .header__navbar ul li {
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+.header .header__navbar ul li a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+.header .header__navbar ul li a:hover {
+  color: black;
+}
+.header .header__navbar ul li:hover {
+  border-radius: 0.6rem;
+  transition: 0.4s;
+  background-color: #fca311;
+}
+
+.main__biography {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main__biography .biography__image {
+  width: 55vh;
+}
+
+.footer {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(to bottom, rgba(20, 33, 61, 0.1), rgba(0, 0, 0, 0.5)), #fca311;
+  color: black;
+}
+.footer ul li {
+  padding: 0.5rem;
+  display: inline-block;
+}
+.footer ul li a {
+  text-decoration: none;
+}
+.footer ul li:hover {
+  border-radius: 0.5rem;
+  background-color: #e5e5e5;
+}
+
+.main {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__influences {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.main .main__influences article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #14213d;
+  width: 30vh;
+  margin: 2rem 5rem;
+}
+.main .main__influences article img {
+  width: 30vh;
+  height: 20vh;
+}
+.main .main__influences article:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 1rem;
+  color: black;
+  background-color: #fca311;
+  padding: 1rem;
+  margin: 2rem 5rem;
+  width: 30vh;
+}
+
+/*# sourceMappingURL=main.css.map */
