@@ -1,0 +1,121 @@
+.header {
+  background-color: #14213d;
+  grid-area: header;
+  padding: 0.4rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header__navbar--queries {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar--brand {
+  margin: auto 0;
+}
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .header__navbar {
+    justify-content: center;
+  }
+}
+.header__navbar--toggle {
+  color: white;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header__navbar--toggle {
+    display: initial;
+    align-self: flex-end;
+    margin: auto 0;
+    cursor: pointer;
+  }
+}
+.header__navbar--links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header__navbar--links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header__navbar--links .active {
+  background-color: #fca311;
+  border-radius: 0.5rem;
+}
+.header__navbar--links .active a {
+  color: black;
+  pointer-events: none;
+}
+.header__navbar--links li {
+  padding: 1rem 2rem;
+}
+.header__navbar--links li a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+.header__navbar--links li a:hover {
+  color: #fca311;
+  transition: all 0.3s ease;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: #fca311;
+  color: black;
+  max-height: 5rem;
+}
+.footer ul li {
+  padding: 0.5rem;
+  display: inline-block;
+}
+.footer ul li a {
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-size: cover;
+  background-color: black;
+  color: #e5e5e5;
+}
+
+.wrapper {
+  height: 100vh;
+  max-width: 100%;
+  align-content: space-between;
+  display: grid;
+  grid-template-areas: "header" "carousel" "footer";
+}
+
+.header__navbar--links {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=fotos.css.map */

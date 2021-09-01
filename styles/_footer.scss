@@ -1,0 +1,29 @@
+@import 'colors';
+
+.footer{
+    grid-area: footer;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: $secondary-color;
+    color: black;
+    max-height: 5rem;
+    ul{
+
+        li{
+            padding: 0.5rem;
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+            }
+
+            a:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

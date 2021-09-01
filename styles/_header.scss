@@ -1,0 +1,88 @@
+@import 'colors';
+@import 'media-queries';
+
+
+.header{
+    background-color: $primary-color;
+    
+    grid-area: header;
+    padding: .4rem 4rem;
+
+
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__navbar--queries{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__navbar--brand{
+        margin: auto 0;
+    }
+    
+    &__navbar{
+        display: flex;
+        flex-direction: row;
+
+        @include tablet{
+            justify-content: center;
+        }
+
+
+        &--toggle{
+            color: white;
+            display: none;
+
+            @include tablet{
+                display: initial;
+                align-self: flex-end;
+                margin: auto 0;
+                cursor: pointer;
+            }
+        }
+
+        &--links{
+            
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+
+
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .active{
+                background-color: #fca311;
+                border-radius: .5rem;
+                
+                a{
+                    color: black;
+                    pointer-events: none;
+                }
+            }
+
+            li{
+                padding: 1rem 2rem;
+
+                a{
+                    color: $third-color;
+                    text-decoration: none;
+                }
+
+                a:hover{
+                    color: $secondary-color;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}

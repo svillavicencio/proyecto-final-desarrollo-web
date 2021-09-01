@@ -1,0 +1,97 @@
+@import "header";
+@import "colors";
+@import "footer";
+@import "background";
+@import "media-queries";
+
+body {
+  height: 100vh;
+  background-color: black !important;
+}
+
+.wrapper {
+  background-color: black;
+  height: 100vh;
+  max-width: 100%;
+  align-content: space-between;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.main {
+  grid-area: main;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "card1 card2 card3";
+
+  @include tablet {
+    grid-template-areas:
+      "title"
+      "card1"
+      "card2"
+      "card3";
+  }
+
+  .main__title {
+    grid-area: title;
+    text-align: center;
+  }
+
+  article:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #fca311;
+    margin: 2rem 2rem;
+  }
+
+  .main__influences--card1 {
+    grid-area: card1;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: $primary-color;
+    margin: 2rem 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .main__influences--card2 {
+    grid-area: card2;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: $primary-color;
+
+    margin: 2rem 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .main__influences--card3 {
+    grid-area: card3;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: $primary-color;
+
+    margin: 2rem 2rem;
+    
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.header__navbar--links {
+  margin-bottom: 0;
+}

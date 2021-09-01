@@ -1,0 +1,48 @@
+@import 'header';
+@import 'colors';
+@import 'footer';
+@import 'background';
+@import 'media-queries';
+
+body{
+    height: 100vh;
+    background-color: black !important;
+}
+
+.wrapper{
+    background-color: black;
+    height: 100vh;
+    max-width: 100%;
+    align-content: space-between;
+    display: grid;
+    grid-template-areas: "header"
+                         "shows"
+                         "footer";
+}
+
+.shows{
+    grid-area: shows;
+    margin: 0 2rem;
+
+    .table{
+        color: $third-color;
+
+        i{
+            color: $third-color;
+        }
+
+        i:hover{
+            color: $secondary-color;
+        }
+        
+        thead{
+            color: $secondary-color;
+        }
+    }
+
+
+}
+
+.header__navbar--links{
+    margin-bottom: 0;
+}

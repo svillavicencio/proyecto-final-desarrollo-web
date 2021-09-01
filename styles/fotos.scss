@@ -1,0 +1,19 @@
+@import 'header';
+@import 'colors';
+@import 'footer';
+@import 'background';
+@import 'media-queries';
+
+.wrapper{
+    height: 100vh;
+    max-width: 100%;
+    align-content: space-between;
+    display: grid;
+    grid-template-areas: "header"
+                         "carousel"
+                         "footer";
+}
+
+.header__navbar--links{
+    margin-bottom: 0;
+}

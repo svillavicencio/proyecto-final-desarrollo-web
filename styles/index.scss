@@ -1,0 +1,54 @@
+@import 'header';
+@import 'footer';
+@import 'background';
+@import 'media-queries';
+
+
+.wrapper{
+    height: 100vh;
+    max-width: 100%;
+    display: grid;
+    align-content: space-between; 
+    grid-template-areas: "header header"
+                         "description aside"
+                         "footer footer";
+
+    @include tablet{
+        grid-template-areas: "header"
+                             "description"
+                             "aside"
+                             "footer";
+    }
+
+    @include mobile-l{
+        .aside{
+            display: none;
+        }
+        
+        grid-template-areas: "header"
+                             "description"
+                             "footer";
+
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 5rem;
+
+    &__title{
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.aside{
+    display: flex;
+    justify-content: center;
+    &__img{
+        width: 55vh;
+        
+    }
+}

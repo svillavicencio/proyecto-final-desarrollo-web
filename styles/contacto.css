@@ -1,0 +1,199 @@
+.header {
+  background-color: #14213d;
+  grid-area: header;
+  padding: 0.4rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header__navbar--queries {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar--brand {
+  margin: auto 0;
+}
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .header__navbar {
+    justify-content: center;
+  }
+}
+.header__navbar--toggle {
+  color: white;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header__navbar--toggle {
+    display: initial;
+    align-self: flex-end;
+    margin: auto 0;
+    cursor: pointer;
+  }
+}
+.header__navbar--links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header__navbar--links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header__navbar--links .active {
+  background-color: #fca311;
+  border-radius: 0.5rem;
+}
+.header__navbar--links .active a {
+  color: black;
+  pointer-events: none;
+}
+.header__navbar--links li {
+  padding: 1rem 2rem;
+}
+.header__navbar--links li a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+.header__navbar--links li a:hover {
+  color: #fca311;
+  transition: all 0.3s ease;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: #fca311;
+  color: black;
+  max-height: 5rem;
+}
+.footer ul li {
+  padding: 0.5rem;
+  display: inline-block;
+}
+.footer ul li a {
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-size: cover;
+  background-color: black;
+  color: #e5e5e5;
+}
+
+body {
+  height: 100vh;
+  background-color: black !important;
+}
+
+.wrapper {
+  background-color: black;
+  height: 100vh;
+  max-width: 100%;
+  align-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "header header" "form form" "footer footer";
+}
+
+.contact {
+  margin: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: form;
+}
+.contact__title {
+  padding-bottom: 2rem;
+}
+.contact__card {
+  align-self: stretch;
+}
+.contact__card input {
+  padding: 0.4rem;
+  border: white;
+  border-radius: 0.2rem;
+}
+.contact__card form {
+  background-color: #14213d;
+  border-radius: 1rem;
+  padding: 0 2rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.contact__card form div {
+  margin-top: 1rem;
+}
+.contact__card form textarea {
+  border: white;
+  border-radius: 0.2rem;
+  margin-top: 2rem;
+}
+.contact__card form .name {
+  display: flex;
+  flex-direction: column;
+}
+.contact__card form .email {
+  display: flex;
+  flex-direction: column;
+}
+.contact__card form .buttons {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: "reset submit";
+}
+.contact__card form .buttons .submit {
+  padding: 0.5rem 2rem;
+  border: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #fca311;
+}
+.contact__card form .buttons .reset {
+  padding: 0.5rem 2rem;
+  color: white;
+  border: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  .contact__card form .buttons {
+    grid-gap: 1rem;
+    grid-template-areas: "reset" "submit";
+  }
+}
+
+.header__navbar--links {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=contacto.css.map */
