@@ -126,6 +126,10 @@ body {
   display: grid;
   grid-template-areas: "title title title" "card1 card2 card3";
 }
+.main a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
 @media screen and (max-width: 768px) {
   .main {
     grid-template-areas: "title" "card1" "card2" "card3";

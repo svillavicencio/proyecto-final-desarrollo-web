@@ -29,6 +29,11 @@ body {
     "title title title"
     "card1 card2 card3";
 
+    a{
+      color: $third-color;
+      text-decoration: none;
+    }
+
   @include tablet {
     grid-template-areas:
       "title"
