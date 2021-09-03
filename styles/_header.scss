@@ -1,9 +1,10 @@
+@use "sass:map";
 @import 'colors';
 @import 'media-queries';
 
 
 .header{
-    background-color: $primary-color;
+    background-color: map.get($colores, "primario");
     
     grid-area: header;
     padding: .4rem 4rem;
@@ -61,7 +62,7 @@
             }
             
             .active{
-                background-color: #fca311;
+                background-color: map.get($colores, "secundario");
                 border-radius: .5rem;
                 
                 a{
@@ -74,12 +75,12 @@
                 padding: 1rem 2rem;
 
                 a{
-                    color: $third-color;
+                    color: map.get($colores, "terciario");
                     text-decoration: none;
                 }
 
                 a:hover{
-                    color: $secondary-color;
+                    color: map.get($colores, "secundario");
                     transition: all 0.3s ease;
                 }
             }
